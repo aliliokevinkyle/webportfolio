@@ -1,0 +1,34 @@
+.navbar{
+	background-color: #FE8E3D !important;
+}
+
+#projects, #contact, #tools{
+	background-color: #DFE0DF !important;
+	color: black !important;
+}
+
+body{
+	font-family: 'Quicksand', sans-serif;
+}
+
+h1{
+	font-size: 50px;
+}
+
+.bg-image{
+	min-height: 100vh;
+	background-color:  #E7F0EF;
+	background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/pf-s100-a02.jpg?w=1200&h=1200&dpr=1&fit=clip&crop=default&fm=jpg&q=75&vib=3&con=3&usm=15&cs=srgb&bg=F4F4F3&ixlib=js-2.2.1&s=c57362ac85e60c77205a352702437da8");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: scroll;
+}
+
+.container{
+	padding-top: 22rem;
+}
+
+.card{
+	background-color: #402E32 !important;
+}
