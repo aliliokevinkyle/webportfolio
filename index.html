@@ -7,15 +7,19 @@
 	<link rel="stylesheet" type="text/css" href="./index.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap" rel="stylesheet">
+
 	<title>Developer's Portfolio</title>
 </head>
 <body>
 
 	 <!-- Navbar Section Start -->
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
-      <a class="navbar-brand" href="#">KevDev</a>
+    <nav class="shadow navbar navbar-expand-lg navbar-dark fixed-top">
+      <a class="navbar-brand" href="#">DevKev</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -28,13 +32,13 @@
             <a class="nav-link" href="#landing">Home<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#about-me">About Me<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#about-me">About<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="#projects">Projects<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#contact">Contact Me<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#contact">Contact<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="#tools">Tools<span class="sr-only">(current)</span></a>
@@ -47,67 +51,58 @@
 
 
     <!-- Landing Section Start -->
+   
+    <div id="landing" class="container-fluid row min-vh-100 d-md-flex justify-content-around">
 
-    <div id="landing" class="bg-image">
-            <div class="front-bg">
-                <div class="container">
-                    <h1>Hi there!</h1>
-	                <h1>I'm Kevin Kyle,</h1>
-	                <h1>web developer</h1>
-                </div>
-            </div> 
-        </div>
+	   		<div id="landing-text" class="pt-5 bg-white col-md-6 order-2 order-md-1">
+
+	   	    <h1 id="hi">Hi! I'm</h1>
+	   	    <h1>Kevin Kyle,</h1>
+	   	    <h1>web developer.</h1>
+	   	    <h2 id="slogan">Let's code your way to success!</h2>
+
+		   	</div>
+		   	
+		   	<div id="landing-image-container" class="pt-5 pr-md-4 bg-white col-md-6 order-1 order-md-2">
+
+		   	    <img id="landing-image" class="w-100 p-3" src="images/self2.png">      
+
+		   	</div>
+
+	</div>
 
     <!-- Landing Section End -->
 
 
     <!-- About Me Section Start -->
 
-   <div id="about-me" class="bg-secondary text-light min-vh-100 p-5">
+   		<div id="about-me" class="bg-secondary text-light min-vh-100 p-5">
     	              
-	    	<h2 class="mb-3">About Me</h2>
+	    	<h2 id="about-title" class="text-center mb-2">About Me</h2>
 
 	    	<!-- Container for Other Projects Start -->
-	    	<div class="d-lg-flex justify-content-center p-md-5">
-	    	  
-	    	  <!-- HTML Card Start -->
-	    	  <div class="card bg-dark col-xl-4 mb-5 mb-xl-0"> 
+	    	<div class="d-md-flex justify-content-center p-md-5">
+	    
+	    	  <div id="about-card1" class="card bg-dark col-lg-6 mb-5 mb-xl-0 ml-xl-5 mr-md-2"> 
 	    	    <div class="card-body">
-	    	      <img src="https://3.bp.blogspot.com/-7x5c_f1yzsQ/XHv9FZKHrEI/AAAAAAAADrE/4iGl9Lm6K2odX4SdWbU_RN6gZesx4IaGACEwYBhgL/s1600/html.jpg" class="card-img-top" alt="...">
-	    	      <h5 class="card-title mt-3">HTML</h5>
-	    	      <h6 class="card-subtitle text-muted mb-2">Programming Basics</h6>
-	    	      <p class="card-text">He wan hawf way to the hawdwawe stowe. The swan dive was faw showt of pewfect.</p>
-	    	      <a href="#" class="card-link">Link to Project</a>
+	    	      <img src="images/picture2.jpg" class="card-img-top border rounded" alt="...">
+	    	     <!--  <h5 class="card-title mt-3">HTML</h5>
+	    	      <h6 class="card-subtitle mb-2">Programming Basics</h6>
+	    	      <p class="card-text">He wan hawf way to the hawdwawe stowe. The swan dive was faw showt of pewfect.</p> -->
 	    	    </div>
 	    	  </div>
-	    	  <!-- HTML Card End -->
+	    	 
 
 	    	  <!-- Bootstrap Card Start -->
-	    	  <div class="card bg-dark col-xl-4 mb-5 mb-xl-0 mr-xl-5 ml-xl-5"> 
+	    	  <div id="about-card2" class="card bg-dark col-lg-6 mb-5 mb-xl-0 mr-xl-5 ml-md-2"> 
 	    	    <div class="card-body">
-	    	      <img src="https://www.winklix.com/blog/wp-content/uploads/2021/01/f1ce6a0af5cb.jpg.png" class="card-img-top" alt="...">
-	    	      <h5 class="card-title mt-3">Node JS Server</h5>
-	    	      <h6 class="card-subtitle text-muted mb-2">Backend Basics</h6>
-	    	      <p class="card-text">He wan hawf way to the hawdwawe stowe. The swan dive was faw showt of pewfect.</p>
-	    	      <a href="#" class="card-link">Link to Project</a>
+	    	      <h5 class="card-title mt-3">Hello there! I'm delighted to have you here. You've made it to my digital portfolio and it appears to me that the World Wide Web has linked my path to yours.</h5>
+	    	     <!--  <h6 class="card-subtitle mb-2">Backend Basics</h6>
+	    	      <p class="card-text">He wan hawf way to the hawdwawe stowe. The swan dive was faw showt of pewfect.</p> -->
 	    	    </div>
 	    	  </div>
-	    	  <!-- Bootstrap Card End -->
 
-	    	  <!-- Bootstrap Card Start -->
-	    	  <div class="card bg-dark col-xl-4 mb-5 mb-xl-0"> 
-	    	    <div class="card-body">
-	    	      <img src="https://clever-solution.com/wp-content/uploads/2020/04/5625%D0%9C%D0%BE%D0%BD%D1%82%D0%B0%D0%B6%D0%BD%D0%B0%D1%8F-%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C-1-1280x720.png" class="card-img-top" alt="...">
-	    	      <h5 class="card-title mt-3">Bootstrap</h5>
-	    	      <h6 class="card-subtitle text-muted mb-2">Rapid Protoyping</h6>
-	    	      <p class="card-text">He wan hawf way to the hawdwawe stowe. The swan dive was faw showt of pewfect.</p>
-	    	      <a href="#" class="card-link">Link to Project</a>
-	    	    </div>
-	    	  </div>
-	    	  <!-- Bootstrap Card End -->
-
-	    	</div>
-	    	<!-- Container for Other Projects End -->              
+	    	</div>            
 
     	</div>
     <!-- About Me Section End -->
@@ -117,43 +112,40 @@
 
     	<div id="projects" class="bg-secondary text-light min-vh-100 p-5">
     	              
-	    	<h2 class="mb-3">Projects</h2>
+	    	<h2 id="projects-title" class="mb-3">Projects</h2>
 
 	    	<!-- Container for Other Projects Start -->
 	    	<div class="d-lg-flex justify-content-center p-md-5">
 	    	  
 	    	  <!-- HTML Card Start -->
-	    	  <div class="card bg-dark col-xl-4 mb-5 mb-xl-0"> 
-	    	    <div class="card-body">
-	    	      <img src="https://3.bp.blogspot.com/-7x5c_f1yzsQ/XHv9FZKHrEI/AAAAAAAADrE/4iGl9Lm6K2odX4SdWbU_RN6gZesx4IaGACEwYBhgL/s1600/html.jpg" class="card-img-top" alt="...">
-	    	      <h5 class="card-title mt-3">HTML</h5>
-	    	      <h6 class="card-subtitle text-muted mb-2">Programming Basics</h6>
-	    	      <p class="card-text">He wan hawf way to the hawdwawe stowe. The swan dive was faw showt of pewfect.</p>
-	    	      <a href="#" class="card-link">Link to Project</a>
+	    	  <div id="projects-card1" class="card bg-dark col-xl-4 mb-5 mb-xl-0"> 
+	    	    <div class="card-body text-center">
+	    	      <img src="images/html.png" class="card-img-top" alt="...">
+	    	      <h5 class="card-title mt-3">My First Project</h5>
+	    	      <h6 class="card-subtitle mb-2">A simple project made with HTML</h6>
+	    	      <a href="html-project/index.html" target="_blank" class="card-link">Link to Project</a>
 	    	    </div>
 	    	  </div>
 	    	  <!-- HTML Card End -->
 
 	    	  <!-- Bootstrap Card Start -->
-	    	  <div class="card bg-dark col-xl-4 mb-5 mb-xl-0 mr-xl-5 ml-xl-5"> 
-	    	    <div class="card-body">
-	    	      <img src="https://www.winklix.com/blog/wp-content/uploads/2021/01/f1ce6a0af5cb.jpg.png" class="card-img-top" alt="...">
-	    	      <h5 class="card-title mt-3">Node JS Server</h5>
-	    	      <h6 class="card-subtitle text-muted mb-2">Backend Basics</h6>
-	    	      <p class="card-text">He wan hawf way to the hawdwawe stowe. The swan dive was faw showt of pewfect.</p>
-	    	      <a href="#" class="card-link">Link to Project</a>
+	    	  <div id="projects-card2" class="card bg-dark col-xl-4 mb-5 mb-xl-0 mr-xl-5 ml-xl-5"> 
+	    	    <div class="card-body text-center">
+	    	      <img src="images/css.png" class="card-img-top" alt="...">
+	    	      <h5 class="card-title mt-3">My Second Project</h5>
+	    	      <h6 class="card-subtitle mb-2">A simple project made with CSS</h6>
+	    	      <a href="css-project/index.html" target="_blank" class="card-link">Link to Project</a>
 	    	    </div>
 	    	  </div>
 	    	  <!-- Bootstrap Card End -->
 
 	    	  <!-- Bootstrap Card Start -->
-	    	  <div class="card bg-dark col-xl-4 mb-5 mb-xl-0"> 
-	    	    <div class="card-body">
-	    	      <img src="https://clever-solution.com/wp-content/uploads/2020/04/5625%D0%9C%D0%BE%D0%BD%D1%82%D0%B0%D0%B6%D0%BD%D0%B0%D1%8F-%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C-1-1280x720.png" class="card-img-top" alt="...">
-	    	      <h5 class="card-title mt-3">Bootstrap</h5>
-	    	      <h6 class="card-subtitle text-muted mb-2">Rapid Protoyping</h6>
-	    	      <p class="card-text">He wan hawf way to the hawdwawe stowe. The swan dive was faw showt of pewfect.</p>
-	    	      <a href="#" class="card-link">Link to Project</a>
+	    	  <div id="projects-card3" class="card bg-dark col-xl-4 mb-5 mb-xl-0"> 
+	    	    <div class="card-body text-center">
+	    	      <img src="images/bootstrap.png" class="card-img-top" alt="...">
+	    	      <h5 class="card-title mt-3">My Third Project</h5>
+	    	      <h6 class="card-subtitle mb-2">A simple project made with Bootstrap</h6>
+	    	      <a href="bootstrap-project/index.html" target="_blank" class="card-link">Link to Project</a>
 	    	    </div>
 	    	  </div>
 	    	  <!-- Bootstrap Card End -->
@@ -169,30 +161,30 @@
 
     <!-- Contact Me Section Start -->
 
-    <div id="contact" class="bg-dark min-vh-100 p-5" id="contact">
+    <div id="contact" class="bg-dark min-vh-100 p-5">
 
-        <h2 class="text-light text-center">Contact Me</h2>
+        <h2 id="contact-title" class="text-light text-center">Contact Me</h2>
 
         <div class="row mt-3">
-            <form class="col-12 offset-md-2 col-md-8 offset-xl-4 col-xl-4 bg-primary p-3 rounded text-center">
+            <form id="form-container" class="col-12 offset-md-2 col-md-8 offset-xl-4 col-xl-4 bg-primary p-3 rounded text-center">
 
                 <div class="form-group">
-                    <label class="text-light" for="name">Name</label>
+                    <label for="name">Name</label>
                     <input type="text" class="form-control" id="name" placeholder="Your Name">
                 </div>
 
                 <div class="form-group">
-                    <label class="text-light" for="email">Email address</label>
+                    <label for="email">Email address</label>
                     <input type="email" class="form-control" id="email" placeholder="name@example.com">
                 </div>
 
                 <div class="form-group">
-                    <label class="text-light" for="contact">Contact Number</label>
-                    <input type="text" class="form-control" id="contact" placeholder="+63 900 000 0000">
+                    <label for="contact">Contact Number</label>
+                    <input type="text" class="form-control" id="contact-number" placeholder="+63 900 000 0000">
                 </div>
 
                 <div class="form-group">
-                    <label class="text-light" for="concern">Concern</label>
+                    <label for="concern">Concern</label>
                     <select class="form-control" id="concern">
                         <option>Quotation</option>
                         <option>Appointment</option>
@@ -201,11 +193,11 @@
                 </div>
 
                 <div class="form-group">
-                    <label class="text-light" for="message">Message</label>
+                    <label for="message">Message</label>
                     <textarea class="form-control" id="message" rows="7"></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">Send Email</button>
+                <button id="submit" type="submit" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">Send Email</button>
             </form>
         </div>
 
@@ -216,16 +208,14 @@
 
     <!-- Tools Section Start -->
 
-    <div id="tools" class="container-fluid text-center">
+    <div id="tools" class="container-fluid text-center min-vh-100">
 
         <!-- Core Tools Section Start -->
-        <h3>Core Tools</h3>
+        <h3 id="core-tools" class="p-5">Core Tools</h3>
 
         <div>
             <div>
                 <img width="150" src="images/logo-html5.png"/>
-            </div>
-            <div>
                 <img width="150" src="images/logo-css3.png"/>
                 <img width="150" src="images/logo-javascript.png"/>
             </div>
@@ -233,7 +223,7 @@
         <!-- Core Tools Section End -->
         
         <!-- Other Tools Section Start -->
-        <h3>Other Tools</h3>
+        <h3 id="other-tools" class="p-5">Other Tools</h3>
 
         <div>
             <div>
@@ -253,8 +243,6 @@
         <!-- Other Tools Section End -->
         
     </div>
-
-
 
     <!-- Tools Section End -->
 

@@ -1,34 +1,161 @@
-.navbar{
-	background-color: #FE8E3D !important;
+/*CSS Reset*/
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
-#projects, #contact, #tools{
-	background-color: #DFE0DF !important;
-	color: black !important;
+.navbar{
+	background-color: #374955 !important;
+}
+
+.nav-link{
+	color: white !important;
+}
+
+#about-me{
+	background-color: #7a7a7a !important;
+	color: !important;
 }
 
 body{
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Patua One', cursive;
 }
 
 h1{
-	font-size: 50px;
+	font-size: 6vw !important;
+	color: #374955 !important;
 }
 
-.bg-image{
+/*#landing{
+	background-color: #e7eef0 !important;
+}
+*/
+
+/*.bg-image{
 	min-height: 100vh;
 	background-color:  #E7F0EF;
-	background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/pf-s100-a02.jpg?w=1200&h=1200&dpr=1&fit=clip&crop=default&fm=jpg&q=75&vib=3&con=3&usm=15&cs=srgb&bg=F4F4F3&ixlib=js-2.2.1&s=c57362ac85e60c77205a352702437da8");
+	background-image: url("images/self2.png");
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center;
+	background-position: bottom;
 	background-attachment: scroll;
+}*/
+
+#about-card1, #about-card2{
+	background-color: #d7bda3 !important;
 }
 
-.container{
-	padding-top: 22rem;
+#landing-text{
+	/*background-color: #e7eef0 !important;*/
+	padding-top: 12rem !important;
+	padding-bottom: 3rem !important;
+	padding-left: 5rem !important;
 }
 
-.card{
-	background-color: #402E32 !important;
+#landing-image{
+	/*background-color: #e7eef0 !important;*/
+	padding-top: 3rem !important;
 }
+
+/*#landing-image-container{
+	background-color: #e7eef0 !important;
+}*/
+
+/*#landing-text, #landing-image-container{
+	background-color: lightgray !important;
+	margin-top: 5rem !important;
+	margin-bottom: 2rem !important;
+}
+*/
+
+#slogan{
+	font-size: 2.3vw  !important;
+	color: #374955 !important;
+	padding-top:1.5rem !important;
+	margin-top: 1rem !important;
+	margin-right: 4rem !important;
+	border-top-style: dashed !important;
+	border-color: #927b66 !important;
+	border-width: 0.5rem !important;
+}
+
+#about-title{
+	font-size: 8vh !important;
+}
+
+h5, h6{
+	color: white; !important;
+}
+
+h5{
+	font-size: 2.7rem !important;
+}
+
+h6{
+	font-size: 1.7rem !important;
+}
+
+.card-link{
+	color: #e3c8ad !important;
+	text-decoration: underline;
+	font-size: 1.3rem !important;
+}
+
+#projects{
+	background-color: #e7eef0 !important;
+}
+
+#projects-title{
+	font-size: 8vh !important;
+	text-align: center;
+	color: #374955 !important;
+}
+
+#projects-card1, #projects-card2, #projects-card3{
+	background-color: #957e69 !important;
+}
+
+/*Contact Section S*/
+
+#contact{
+	background-color: #7a7a7a !important;
+	color: !important;
+}
+
+#contact-title{
+	font-size: 8vh !important;
+	text-align: center;
+	color: white;
+}
+
+#form-container{
+	background-color: #d7bda3 !important;
+}
+
+div label{
+	color: #4c4136 !important;
+}
+
+#submit{
+	background-color: #374955 !important;
+	border-color: none;
+}
+
+/*Contact Section E*/
+
+
+/*Tools Section S*/
+
+#tools{
+	background-color: #e7eef0 !important;
+}
+
+#core-tools, #other-tools{
+	font-size: 5vh !important;
+	text-align: center;
+	color: #374955 !important;
+}
+}
+
+/*Tools Section E*/
