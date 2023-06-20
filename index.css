@@ -1,132 +1,210 @@
-/*CSS Reset*/
+CSS Reset*/
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 }
 
-.navbar{
-	background-color: #374955 !important;
-}
+
+/*Navbar*/
+
+/*.navbar{
+	background-color: #e7eef0 !important;
+}*/
 
 .nav-link{
-	color: white !important;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: #374955 !important;
+	text-shadow: -1px -1px 0 #e7eef0, 1px -1px 0 #e7eef0, -1px 1px 0 #e7eef0, 1px 1px 0 #e7eef0;
 }
 
-#about-me{
-	background-color: #7a7a7a !important;
-	color: !important;
+
+.navbar-brand{
+	font-family: 'Libre Baskerville', serif;
+	font-size: 1.4rem !important;
+	font-weight: 700;
+	color: #374955 !important;
+	text-shadow: -1px -1px 0 #e7eef0, 1px -1px 0 #e7eef0, -1px 1px 0 #e7eef0, 1px 1px 0 #e7eef0;
 }
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(55, 73, 85, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+.navbar-toggler{
+  border-color: rgb(55, 73, 85, 0) !important;
+} 
 
 body{
-	font-family: 'Patua One', cursive;
+	font-family: 'Libre Baskerville', serif;
 }
 
 h1{
-	font-size: 6vw !important;
+	font-size: clamp(2rem, 5vw, 5vw) !important;
+	font-weight: bold;
 	color: #374955 !important;
 }
 
-/*#landing{
+/*Landing Page*/
+
+#landing, #landing-text, #landing-image-container{
 	background-color: #e7eef0 !important;
 }
-*/
-
-/*.bg-image{
-	min-height: 100vh;
-	background-color:  #E7F0EF;
-	background-image: url("images/self2.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: bottom;
-	background-attachment: scroll;
-}*/
-
-#about-card1, #about-card2{
-	background-color: #d7bda3 !important;
-}
-
-#landing-text{
-	/*background-color: #e7eef0 !important;*/
-	padding-top: 12rem !important;
-	padding-bottom: 3rem !important;
-	padding-left: 5rem !important;
-}
-
-#landing-image{
-	/*background-color: #e7eef0 !important;*/
-	padding-top: 3rem !important;
-}
-
-/*#landing-image-container{
-	background-color: #e7eef0 !important;
-}*/
-
-/*#landing-text, #landing-image-container{
-	background-color: lightgray !important;
-	margin-top: 5rem !important;
-	margin-bottom: 2rem !important;
-}
-*/
 
 #slogan{
-	font-size: 2.3vw  !important;
+	font-family: 'Montserrat', sans-serif;
+	font-size: clamp(1.2rem, 2.3vw, 2.3vw) !important;
 	color: #374955 !important;
-	padding-top:1.5rem !important;
-	margin-top: 1rem !important;
-	margin-right: 4rem !important;
+	padding-top: 1.8vh !important;
+	margin-top: 1vw !important;
+	margin-bottom: 5vw !important;
+	margin-right: 5vw !important;
 	border-top-style: dashed !important;
 	border-color: #927b66 !important;
-	border-width: 0.5rem !important;
+	border-width: 0.5vw !important;
+}
+
+#contact-me-button{
+	font-family: 'Libre Baskerville', serif;
+	font-size: clamp(1rem, 2vw, 2vw) !important;
+}
+
+
+/*About Me Section*/
+
+#about-me{
+	background: 
+
+		linear-gradient(
+
+			rgba(231, 238, 240, 1),
+			rgba(154, 174, 188, 1)
+
+		);
+	color: !important;
+}
+
+#about-card2{
+	background: 
+
+		linear-gradient(
+
+			rgba(160, 135, 112, 0.5),
+			rgba(160, 135, 112, 0.5)
+
+		);
 }
 
 #about-title{
-	font-size: 8vh !important;
+	font-size: clamp(2.5rem, 4vw, 4vw) !important;
+	font-weight: 700;
+	color: #374955 !important;
+	text-shadow: 2px 2px white;
 }
 
-h5, h6{
-	color: white; !important;
+h3, h6{
+	color: white !important;
 }
 
-h5{
-	font-size: 2.7rem !important;
+h3{
+	font-family: 'Montserrat', sans-serif;
+	font-style: italic;
+	font-size: clamp(1.2rem, 1.85vw, 1.85vw) !important;
+	text-align: justify;
 }
 
 h6{
 	font-size: 1.7rem !important;
 }
 
-.card-link{
-	color: #e3c8ad !important;
-	text-decoration: underline;
-	font-size: 1.3rem !important;
-}
+
+/*Projects Section*/
 
 #projects{
-	background-color: #e7eef0 !important;
+	background: 
+
+		linear-gradient(
+
+			rgba(154, 174, 188, 1),
+			rgba(231, 238, 240, 1)
+
+		);
 }
 
 #projects-title{
-	font-size: 8vh !important;
+	font-size: clamp(2.5rem, 4vw, 4vw) !important;
+	font-weight: 700;
 	text-align: center;
-	color: #374955 !important;
+	color: white !important;
+	text-shadow: 2.5px 2.5px #374955;
 }
 
 #projects-card1, #projects-card2, #projects-card3{
-	background-color: #957e69 !important;
+	background: 
+
+		linear-gradient(
+
+			rgba(122, 122, 122, 0.5),
+			rgba(122, 122, 122, 0.5)
+
+		);
+}
+
+.project-title{
+	font-family: 'Libre Baskerville', serif !important; 
+	font-size: clamp(1.3rem, 1.6vw, 1.6vw) !important;
+	text-align: center;
+	color: white !important;
+}
+
+.project-desc{
+	font-family: 'Montserrat', sans-serif !important; 
+	font-size: clamp(1rem, 1.1vw, 1.1vw) !important;
+	text-align: center;
+	color: white !important;
+}
+
+.card-btn{
+	background-color: #e3c8ad !important;
+	border-color: none !important;
+	border-radius: 3rem;
+	font-size: clamp(1rem, 1.1vw, 1.1vw) !important;
 }
 
 /*Contact Section S*/
 
 #contact{
-	background-color: #7a7a7a !important;
+	background: 
+
+		linear-gradient(
+
+			rgba(154, 174, 188, 1),
+			rgba(154, 174, 188, 1)
+
+		);
 	color: !important;
 }
 
+.contact-container{
+	background: 
+
+		linear-gradient(
+
+			rgba(0, 0, 0, 0.2),
+			rgba(0, 0, 0, 0.2)
+
+		);
+	border-radius: 3rem;
+}
+
 #contact-title{
-	font-size: 8vh !important;
+	font-size: clamp(2.5rem, 4vw, 4vw) !important;
+	font-weight: 700;
 	text-align: center;
-	color: white;
+	color: white !important;
+	text-shadow: 2.5px 2.5px #374955;
 }
 
 #form-container{
@@ -135,6 +213,11 @@ h6{
 
 div label{
 	color: #4c4136 !important;
+	font-weight: 700;
+}
+
+.form-control{
+	font-family: 'Montserrat', sans-serif !important; 
 }
 
 #submit{
@@ -148,14 +231,29 @@ div label{
 /*Tools Section S*/
 
 #tools{
-	background-color: #e7eef0 !important;
+	background: 
+
+		linear-gradient(
+
+			rgba(231, 238, 240, 1),
+			rgba(154, 174, 188, 1)
+
+		);
 }
 
 #core-tools, #other-tools{
-	font-size: 5vh !important;
+	font-family: 'Libre Baskerville', serif !important;
+	font-weight: 700;
+	font-style: normal;
+	font-size: clamp(2.5rem, 4vw, 4vw) !important;
 	text-align: center;
 	color: #374955 !important;
-}
+	text-shadow: 2px 2px white;
 }
 
-/*Tools Section E*/
+.tool-img{
+	background-color: #e7eef0 !important;
+	border-radius: 5rem;
+}
+
+/*Tools Section E

@@ -11,6 +11,11 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400&display=swap" rel="stylesheet">
+
+
 
 	<title>Developer's Portfolio</title>
 </head>
@@ -18,7 +23,7 @@
 
 	 <!-- Navbar Section Start -->
 
-    <nav class="shadow navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-transparent">
       <a class="navbar-brand" href="#">DevKev</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -38,10 +43,10 @@
             <a class="nav-link" href="#projects">Projects<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#contact">Contact<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#tools">Tools<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#tools">Tools<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#contact">Contact<span class="sr-only">(current)</span></a>
           </li>
         </ul>
       </div>
@@ -49,43 +54,46 @@
 
     <!-- Navbar Section End -->
 
-
     <!-- Landing Section Start -->
    
-    <div id="landing" class="container-fluid row min-vh-100 d-md-flex justify-content-around">
+    <div id="landing" class="container-fluid pt-4 py-md-5 h-100">
+        <div class="landing-row row px-3 px-md-5 py-4 pt-md-5 my-md-2">
+            <div id="landing-text" class="bg-white pt-4 col-md-6 order-2 order-md-1">
 
-	   		<div id="landing-text" class="pt-5 bg-white col-md-6 order-2 order-md-1">
+            <h1 id="hi" class="pt-xl-5">Hi! I'm</h1>
+            <h1>Kevin Kyle,</h1>
+            <h1>web developer.</h1>
+            <h2 id="slogan">Let's code your way to success!</h2>
+            <a href="#contact">
+            <button id="contact-me-button" type="button" class="btn btn-dark mb-5 mb-md-0 px-4">GET IN TOUCH</button>
+            </a>
 
-	   	    <h1 id="hi">Hi! I'm</h1>
-	   	    <h1>Kevin Kyle,</h1>
-	   	    <h1>web developer.</h1>
-	   	    <h2 id="slogan">Let's code your way to success!</h2>
+            </div>
+            
+            <div id="landing-image-container" class="bg-white pt-4 pt-md-2 col-md-6 order-1 order-md-2">
 
-		   	</div>
-		   	
-		   	<div id="landing-image-container" class="pt-5 pr-md-4 bg-white col-md-6 order-1 order-md-2">
+                <img id="landing-image" class="w-100" src="images/self2.png">      
 
-		   	    <img id="landing-image" class="w-100 p-3" src="images/self2.png">      
-
-		   	</div>
-
-	</div>
+            </div>
+        </div>
+    </div>
 
     <!-- Landing Section End -->
 
-
     <!-- About Me Section Start -->
 
-   		<div id="about-me" class="bg-secondary text-light min-vh-100 p-5">
+   		<div id="about-me" class="bg-secondary text-light h-100 p-4 p-md-5">
+
+            <div class="container-fluid contact-container mt-2 mb-3 ml-0 mr-2 pl-md-4 pr-md-5 pb-5">
     	              
-	    	<h2 id="about-title" class="text-center mb-2">About Me</h2>
+	    	<h2 id="about-title" class="text-center pt-4 pb-3">ABOUT ME</h2>
 
 	    	<!-- Container for Other Projects Start -->
-	    	<div class="d-md-flex justify-content-center p-md-5">
+	    	<div id="about-card1" class="d-xl-flex justify-content-center pl-md-2 pl-xl-0">
 	    
-	    	  <div id="about-card1" class="card bg-dark col-lg-6 mb-5 mb-xl-0 ml-xl-5 mr-md-2"> 
-	    	    <div class="card-body">
-	    	      <img src="images/picture2.jpg" class="card-img-top border rounded" alt="...">
+	    	  <div class="container-fluid  col-xl-4"> 
+	    	    <div>
+	    	      <img src="images/about-me.png" class="card-img-top rounded shadow ml-md-2" alt="...">
 	    	     <!--  <h5 class="card-title mt-3">HTML</h5>
 	    	      <h6 class="card-subtitle mb-2">Programming Basics</h6>
 	    	      <p class="card-text">He wan hawf way to the hawdwawe stowe. The swan dive was faw showt of pewfect.</p> -->
@@ -94,15 +102,21 @@
 	    	 
 
 	    	  <!-- Bootstrap Card Start -->
-	    	  <div id="about-card2" class="card bg-dark col-lg-6 mb-5 mb-xl-0 mr-xl-5 ml-md-2"> 
-	    	    <div class="card-body">
-	    	      <h5 class="card-title mt-3">Hello there! I'm delighted to have you here. You've made it to my digital portfolio and it appears to me that the World Wide Web has linked my path to yours.</h5>
-	    	     <!--  <h6 class="card-subtitle mb-2">Backend Basics</h6>
-	    	      <p class="card-text">He wan hawf way to the hawdwawe stowe. The swan dive was faw showt of pewfect.</p> -->
+	    	  <div id="about-card2" class="container-fluid card bg-dark col-xl-8 mt-3 mt-xl-0 mx-auto ml-md-2 ml-xl-0 shadow"> 
+	    	    <div class="about-card-text card-body">
+	    	      <h3 class="card-title">
+                    Hello there! I'm delighted to have you here. You've made it to my digital portfolio and it appears to me that the World Wide Web has linked my path to yours.
+                  </h3>
+                  <h3>
+                    My name is Kevin Kyle Alilio. I'm an education graduate who is currently working as an ESL teacher and is now 
+                    a full-fledged web developer, too. Although my prior experience is in a different field, I have been able to acquire the essential skills for web development through dedicated training and continuous self-study. Moreover, as a person who's pursuing growth in his newly-established craft, I do believe that getting to work with distinctly skilled and experienced people would be of great help in further enhancing what I can offer as a web developer.
+                  </h3>
 	    	    </div>
 	    	  </div>
 
-	    	</div>            
+	    	</div>
+
+            </div>            
 
     	</div>
     <!-- About Me Section End -->
@@ -110,48 +124,60 @@
 
     <!-- Projects Section Start -->
 
-    	<div id="projects" class="bg-secondary text-light min-vh-100 p-5">
-    	              
-	    	<h2 id="projects-title" class="mb-3">Projects</h2>
+    	<div id="projects" class="bg-secondary text-light h-100 p-4 p-md-5">
+
+            <div class="container-fluid contact-container mt-2 mb-3 ml-0 mr-2 pl-md-5 pr-md-5 pb-5">
+
+            <div>    	              
+	    	<h2 id="projects-title" class="pt-4 pb-3">PROJECTS</h2>
+            </div>
 
 	    	<!-- Container for Other Projects Start -->
-	    	<div class="d-lg-flex justify-content-center p-md-5">
+	    	<div class="container-fluid d-lg-flex justify-content-center">
 	    	  
-	    	  <!-- HTML Card Start -->
-	    	  <div id="projects-card1" class="card bg-dark col-xl-4 mb-5 mb-xl-0"> 
+	    	  <!-- Capstone 1 Card Start -->
+	    	  <div id="projects-card1" class="card bg-dark col-xl-4 mr-xl-2 ml-xl-5 shadow"> 
 	    	    <div class="card-body text-center">
-	    	      <img src="images/html.png" class="card-img-top" alt="...">
-	    	      <h5 class="card-title mt-3">My First Project</h5>
-	    	      <h6 class="card-subtitle mb-2">A simple project made with HTML</h6>
-	    	      <a href="html-project/index.html" target="_blank" class="card-link">Link to Project</a>
+	    	      <img src="images/cpstn1.png" class="card-img-top" alt="...">
+	    	      <h5 class="project-title card-title mt-3">Front-End Capstone</h5>
+	    	      <h6 class="project-desc card-subtitle mb-2 py-2">A mobile-responsive web portfolio created using HTML, native CSS, and Bootstrap.</h6>
+	    	      <a href="https://aliliokevinkyle.github.io/webportfolio/" target="_blank">
+                     <button type="button" class="card-btn btn px-4">Link to Project</button>      
+                  </a>
 	    	    </div>
 	    	  </div>
-	    	  <!-- HTML Card End -->
+	    	  <!-- Capstone 1 Card End -->
 
-	    	  <!-- Bootstrap Card Start -->
-	    	  <div id="projects-card2" class="card bg-dark col-xl-4 mb-5 mb-xl-0 mr-xl-5 ml-xl-5"> 
+	    	  <!-- Capstone 2 Card Start -->
+	    	  <div id="projects-card2" class="card bg-dark col-xl-4 mx-xl-2 my-3 my-xl-0 shadow"> 
 	    	    <div class="card-body text-center">
-	    	      <img src="images/css.png" class="card-img-top" alt="...">
-	    	      <h5 class="card-title mt-3">My Second Project</h5>
-	    	      <h6 class="card-subtitle mb-2">A simple project made with CSS</h6>
-	    	      <a href="css-project/index.html" target="_blank" class="card-link">Link to Project</a>
+	    	      <img src="images/cpstn2.png" class="card-img-top" alt="...">
+	    	      <h5 class="project-title card-title mt-3">Back-End Capstone</h5>
+	    	      <h6 class="project-desc card-subtitle mb-2 py-2">An E-Commerce API developed using Node and Express.js. </h6>
+	    	      <a href="https://gitlab.com/b279-alilio/backend/-/tree/master/capstone-2" target="_blank">
+                    <button type="button" class="card-btn btn px-4">Link to Project</button>
+                  </a>
 	    	    </div>
 	    	  </div>
-	    	  <!-- Bootstrap Card End -->
+	    	  <!-- Capstone 2 Card End -->
 
-	    	  <!-- Bootstrap Card Start -->
-	    	  <div id="projects-card3" class="card bg-dark col-xl-4 mb-5 mb-xl-0"> 
+	    	  <!-- Capstone 3 Card Start -->
+	    	  <div id="projects-card3" class="card bg-dark col-xl-4 ml-xl-2 mr-xl-5 shadow"> 
 	    	    <div class="card-body text-center">
-	    	      <img src="images/bootstrap.png" class="card-img-top" alt="...">
-	    	      <h5 class="card-title mt-3">My Third Project</h5>
-	    	      <h6 class="card-subtitle mb-2">A simple project made with Bootstrap</h6>
-	    	      <a href="bootstrap-project/index.html" target="_blank" class="card-link">Link to Project</a>
+	    	      <img src="images/cpstn3.png" class="card-img-top" alt="...">
+	    	      <h5 class="project-title card-title mt-3">Full-Stack Capstone</h5>
+	    	      <h6 class="project-desc card-subtitle mb-2 py-2">A full-stack website that operates through MERN Stack.</h6>
+	    	      <a href="https://capstone3-alilio.onrender.com" target="_blank" class="card-link">
+                    <button type="button" class="card-btn btn px-4">Link to Project</button>      
+                  </a>
 	    	    </div>
 	    	  </div>
-	    	  <!-- Bootstrap Card End -->
+	    	  <!-- Capstone 3 Card End -->
 
 	    	</div>
-	    	<!-- Container for Other Projects End -->              
+	    	<!-- Container for Other Projects End -->    
+
+            </div>          
 
     	</div>
     					
@@ -159,33 +185,84 @@
     <!-- Projects Section End -->
 
 
+    <!-- Tools Section Start -->
+
+    <div id="tools" class="container-fluid text-center h-100 p-4 p-md-5">
+
+        <div class="container-fluid contact-container mt-2 mb-3 ml-0 mr-2 pl-5 pr-5 pb-3">
+
+        <!-- Core Tools Section Start -->
+        <div class="pt-4">
+            <h3 id="core-tools" class="pt-4 pb-3">CORE TOOLS</h3>
+        </div>
+
+        <div>
+            <div class="mb-3">
+                <img class="tool-img mx-1 mx-md-3 my-2 my-lg-1" width="150" src="images/logo-html5.png"/>
+                <img class="tool-img mx-1 mx-md-3 my-2 my-lg-1" width="150" src="images/logo-css3.png"/>
+                <img class="tool-img mx-1 mx-md-3 my-2 my-lg-1" width="150" src="images/logo-javascript.png"/>
+            </div>
+        </div>
+        <!-- Core Tools Section End -->
+        
+        <!-- Other Tools Section Start -->
+        <div class="pt-4">
+                <h3 id="other-tools" class="pt-4 pb-3">OTHER TOOLS</h3>
+        </div>
+
+        <div class="pb-5">
+            <div>
+                <img class="tool-img mx-1 mx-md-3 my-2 my-lg-1" width="150" src="images/logo-bootstrap.png"/>
+                <img class="tool-img mx-1 mx-md-3 my-2 my-lg-1" width="150" src="images/logo-mongodb.png"/>
+                <img class="tool-img mx-1 mx-md-3 my-2 my-lg-1" width="150" src="images/logo-nodejs.png"/>
+                <img class="tool-img mx-1 mx-md-3 my-2 my-lg-1" width="150" src="images/logo-expressjs.png"/>
+                <img class="tool-img mx-1 mx-md-3 my-2 my-lg-1 width="150" src="images/logo-react.png"/>
+            </div>
+            <div class="pb-0">
+                <img class="tool-img mx-1 mx-md-3 my-2 my-lg-1" width="150" src="images/logo-git.png"/>
+                <img class="tool-img mx-1 mx-md-3 my-2 my-lg-1" width="150" src="images/logo-sublime-text-3.png"/>
+                <img class="tool-img mx-1 mx-md-3 my-2 my-lg-1" width="150" src="images/logo-postman.png"/>
+                <img class="tool-img mx-1 mx-md-3 my-2 my-lg-1" width="150" src="images/logo-gitlab-ci-cd.png"/>
+            </div>
+        </div>
+        <!-- Other Tools Section End -->
+
+    </div>
+        
+    </div>
+
+    <!-- Tools Section End -->
+
+
     <!-- Contact Me Section Start -->
 
-    <div id="contact" class="bg-dark min-vh-100 p-5">
+    <div id="contact" class="bg-dark h-100 p-4 p-md-5">
 
-        <h2 id="contact-title" class="text-light text-center">Contact Me</h2>
+        <div class="container-fluid contact-container px-5 px-md-0">
+
+        <h2 id="contact-title" class="text-light text-center pt-4 pb-3">CONTACT ME</h2>
 
         <div class="row mt-3">
-            <form id="form-container" class="col-12 offset-md-2 col-md-8 offset-xl-4 col-xl-4 bg-primary p-3 rounded text-center">
+            <form action="https://formspree.io/f/xqkovarn" method="POST" onsubmit="this.submit(); this.reset(); return false;" id="form-container" class="col-12 offset-md-2 col-md-8 offset-xl-4 col-xl-4 bg-primary py-3 mb-5 rounded text-center shadow">
 
                 <div class="form-group">
                     <label for="name">Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
                 </div>
 
                 <div class="form-group">
                     <label for="email">Email address</label>
-                    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="contact">Contact Number</label>
-                    <input type="text" class="form-control" id="contact-number" placeholder="+63 900 000 0000">
+                    <label for="contact-number">Contact Number</label>
+                    <input type="text" class="form-control" id="contact-number" name="contact-number" placeholder="+63 900 000 0000" required>
                 </div>
 
                 <div class="form-group">
                     <label for="concern">Concern</label>
-                    <select class="form-control" id="concern">
+                    <select class="form-control" id="concern" name="concern" required>
                         <option>Quotation</option>
                         <option>Appointment</option>
                         <option>Follow-Up</option>
@@ -194,62 +271,22 @@
 
                 <div class="form-group">
                     <label for="message">Message</label>
-                    <textarea class="form-control" id="message" rows="7"></textarea>
+                    <textarea class="form-control" id="message" name="message" rows="7"></textarea>
                 </div>
 
-                <button id="submit" type="submit" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">Send Email</button>
+                <button id="submit" type="submit" class="btn btn-dark">Send Email</button>
             </form>
         </div>
-
+      <div>
     </div>            
 
     <!-- Contact Me Section End -->
 
 
-    <!-- Tools Section Start -->
-
-    <div id="tools" class="container-fluid text-center min-vh-100">
-
-        <!-- Core Tools Section Start -->
-        <h3 id="core-tools" class="p-5">Core Tools</h3>
-
-        <div>
-            <div>
-                <img width="150" src="images/logo-html5.png"/>
-                <img width="150" src="images/logo-css3.png"/>
-                <img width="150" src="images/logo-javascript.png"/>
-            </div>
-        </div>
-        <!-- Core Tools Section End -->
-        
-        <!-- Other Tools Section Start -->
-        <h3 id="other-tools" class="p-5">Other Tools</h3>
-
-        <div>
-            <div>
-                <img width="150" src="images/logo-mongodb.png"/>
-                <img width="150" src="images/logo-nodejs.png"/>
-                <img width="150" src="images/logo-expressjs.png"/>
-                <img width="150" src="images/logo-react.png"/>
-                <img width="150" src="images/logo-heroku.png"/>
-            </div>
-            <div class="mt-3">
-                <img width="150" src="images/logo-git.png"/>
-                <img width="150" src="images/logo-sublime-text-3.png"/>
-                <img width="150" src="images/logo-postman.png"/>
-                <img width="150" src="images/logo-gitlab-ci-cd.png"/>
-            </div>
-        </div>
-        <!-- Other Tools Section End -->
-        
-    </div>
-
-    <!-- Tools Section End -->
 
 
 
-
-
+    <script src="./reset-form.js"></script>
 
     <!-- Bootstrap JS Script -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
